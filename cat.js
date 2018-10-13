@@ -1,4 +1,4 @@
-let Hello = (function () {
+var Hello = (function () {
     function Hello(name) {
         this.name = name;
     }
@@ -30,11 +30,11 @@ let Hello = (function () {
     };
     return Hello;
 }());
-let helloKei1 = new Hello("計");
+var helloKei1 = new Hello("計");
 helloKei1.age = 17;
-let words = helloKei1.say();
-let age = helloKei1.age;
-let List = (function () {
+var words = helloKei1.say();
+var age = helloKei1.age;
+var List = (function () {
     function List() {
         this.data = [];
     }
@@ -46,13 +46,13 @@ let List = (function () {
     };
     return List;
 }());
-let dateList = new List();
+var dateList = new List();
 dateList.add(new Date());
-let d = dateList.get(0);
-let nameList = new List();
+var d = dateList.get(0);
+var nameList = new List();
 nameList.add("kei");
-let n = nameList.get(0);
-let str = window.prompt('入力してください');
+var n = nameList.get(0);
+var str = window.prompt('入力してください');
 showStr(str);
 function showStr(str) {
     alert(str);

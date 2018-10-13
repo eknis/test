@@ -1,8 +1,14 @@
-var str = window.prompt('入力してください');
-showStr(str);
-function showStr(str: string) {
-    alert(str);
+interface lol {
+    name: string;
+    func1: (number) => void;
+    func2: function;
+    func3: number;
+    func4: number;
 }
-function test() {
 
+var first: lol = {
+    name: 'nameString',
+    func1: ('ssss') => {console.log('func1')},
+    func2: () => {func1()},
+    func3: 1.3
 }

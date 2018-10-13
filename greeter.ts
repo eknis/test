@@ -1,3 +1,4 @@
+
 class Hello {
 	public name; string;
 	private _age: number;
@@ -30,7 +31,7 @@ class Hello {
 	}
 }
 
-var helloKei1 = new Hello("計");
+var helloKei1 = new Hello("KEI");
 helloKei1.age = 17;
 var words = helloKei1.say();
 var age = helloKei1.age;
